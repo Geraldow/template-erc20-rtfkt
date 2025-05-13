@@ -1,0 +1,10 @@
+{
+  "name": "RTFKT Sneaker #1",
+  "description": "A unique digital sneaker for the metaverse.",
+  "image": "https://your-server.com/images/sneaker1.png",
+  "attributes": [
+    { "trait_type": "Model", "value": "Genesis" },
+    { "trait_type": "Color", "value": "Red/Black" },
+    { "trait_type": "Size", "value": "42" }
+  ]
+}

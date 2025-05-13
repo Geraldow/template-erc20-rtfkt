@@ -2,8 +2,8 @@ import { ethers } from "hardhat";
 
 async function main() {
     const contractAddress = "YOUR_DEPLOYED_CONTRACT_ADDRESS";
-    const MySimpleNFT = await ethers.getContractFactory("MySimpleNFT");
-    const contract = MySimpleNFT.attach(contractAddress);
+    const MySneakersAsNFT = await ethers.getContractFactory("MySneakersAsNFT");
+    const contract = MySneakersAsNFT.attach(contractAddress);
 
     const owner = await contract.ownerOf(1);
     const uri = await contract.tokenURI(1);

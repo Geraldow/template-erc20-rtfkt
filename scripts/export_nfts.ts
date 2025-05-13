@@ -4,8 +4,8 @@ import * as fs from "fs";
 async function main() {
     // Replace with your deployed contract address
     const contractAddress = "YOUR_DEPLOYED_CONTRACT_ADDRESS";
-    const MySimpleNFT = await ethers.getContractFactory("MySimpleNFT");
-    const contract = MySimpleNFT.attach(contractAddress);
+    const MySneakersAsNFT = await ethers.getContractFactory("MySneakersAsNFT");
+    const contract = MySneakersAsNFT.attach(contractAddress);
 
     // Set how many tokens you want to export (e.g., 10)
     const totalTokens = 10;

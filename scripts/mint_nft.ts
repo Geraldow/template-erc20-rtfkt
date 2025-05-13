@@ -5,8 +5,8 @@ async function main() {
     const contractAddress = "0x1234567890abcdef1234567890abcdef12345678"; // <-- Use your real contract address here
     const [deployer] = await ethers.getSigners();
 
-    const MySimpleNFT = await ethers.getContractFactory("MySimpleNFT");
-    const contract = MySimpleNFT.attach(contractAddress);
+    const MySneakersAsNFT = await ethers.getContractFactory("MySneakersAsNFT");
+    const contract = MySneakersAsNFT.attach(contractAddress);
 
     // Use the deployer's address for local testing
     await contract.mintItem(deployer.address, "https://your-metadata-uri.com/1.json");

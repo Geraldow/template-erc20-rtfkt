@@ -4,13 +4,13 @@ async function main() {
   const [deployer] = await ethers.getSigners();
   console.log("Deploying contracts with the account:", deployer.address);
 
-  const ContractFactory = await ethers.getContractFactory("MySimpleNFT");
+  const ContractFactory = await ethers.getContractFactory("MySneakersAsNFT");
   // Pasamos la dirección del desplegador como 'initialOwner' al constructor
   const contract = await ContractFactory.deploy(deployer.address);
 
   await contract.waitForDeployment();
   const contractAddress = await contract.getAddress();
-  console.log("MySimpleNFT deployed to:", contractAddress);
+  console.log("MySneakersAsNFT deployed to:", contractAddress);
 
   // --- Mintear un token de ejemplo ---
   const recipient = deployer.address; // Mintear al mismo desplegador
